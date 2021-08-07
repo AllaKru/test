@@ -6,6 +6,7 @@ export default function getBuffer() {
     const bufferView = new Uint16Array(buffer);
     for (let i = 0; i < input.length; i += 1) {
       bufferView[i] = input.charCodeAt(i);
+      console.log(123)
     }
     return buffer;
   })(data);
