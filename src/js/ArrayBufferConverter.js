@@ -5,6 +5,7 @@ export default class ArrayBufferConverter {
 
   toString() {
     const buff = new Uint16Array(this.buffer);
+    console.log(buff);
     return String.fromCharCode(...buff);
     // let string = '';
     // for (let i = 0; i < this.buff.length; i += 1) {
